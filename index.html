@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background: none; 
+            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ajusta la altura */
+            padding: 0; 
+            margin: 0;
+        }
+        
+        h2 { 
+            font-family: 'Montserrat', sans-serif; 
+            font-weight: bold; 
+            color: #0067d7; 
+        }
+
+        main {
+            width: 90%; /* Hace que sea flexible en todos los dispositivos */
+            max-width: 900px; /* Controla el tamaño en computadoras */
+            padding: 20px;
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 768px) {
+            main {
+                width: 95%; /* Se expande más en móviles */
+                padding: 5vw; /* Ajusta el padding en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="bg-white rounded-lg shadow-lg">
+        <section class="p-6">
+            <h2 class="text-2xl">Misión</h2>
+            <p class="mt-2 text-gray-700">Nuestra misión es ofrecer soluciones tecnológicas innovadoras y de alta calidad que optimicen los procesos empresariales de nuestros clientes, mediante el desarrollo y la implementación de software y sistemas a medida, diseñados para satisfacer sus necesidades específicas y garantizar su éxito a largo plazo.</p>
+        </section>
+
+        <section class="p-6">
+            <h2 class="text-2xl">Visión</h2>
+            <p class="mt-2 text-gray-700">Ser reconocidos como líderes en la creación de soluciones digitales avanzadas, transformando la manera en que las empresas operan a nivel nacional, a través de la innovación constante, la excelencia en el servicio y el compromiso con la mejora continua.</p>
+        </section>
+
+        <section class="p-6">
+            <h2 class="text-2xl">Valores</h2>
+            <ul class="mt-2 text-gray-700 list-disc pl-5">
+                <li><strong>Innovación:</strong> Fomentamos la creatividad y la innovación para ofrecer soluciones tecnológicas de vanguardia que respondan a las necesidades cambiantes del mercado.</li>
+                <li><strong>Calidad:</strong> Nos comprometemos con la excelencia, garantizando que cada producto y servicio entregado cumpla con los más altos estándares de calidad.</li>
+                <li><strong>Compromiso:</strong> Trabajamos estrechamente con nuestros clientes, asegurando que sus objetivos y expectativas sean alcanzados a través de soluciones efectivas y eficientes.</li>
+                <li><strong>Integridad:</strong> Actuamos con transparencia, honestidad y ética en todas nuestras relaciones comerciales.</li>
+                <li><strong>Trabajo en equipo:</strong> Fomentamos un ambiente colaborativo, donde el talento y las ideas se complementan para alcanzar los mejores resultados.</li>
+                <li><strong>Orientación al cliente:</strong> Colocamos a nuestros clientes en el centro de nuestra estrategia, buscando siempre soluciones que mejoren su competitividad y satisfacción.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
