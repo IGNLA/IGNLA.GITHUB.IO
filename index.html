@@ -6,62 +6,74 @@
     <title>Nosotros</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { 
-            font-family: 'Montserrat', sans-serif; 
-            background: none; 
-            overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        /* Configuración general */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Ajusta la altura */
-            padding: 0; 
-            margin: 0;
-        }
-        
-        h2 { 
-            font-family: 'Montserrat', sans-serif; 
-            font-weight: bold; 
-            color: #0067d7; 
+            min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+            overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
         }
 
-        main {
-            width: 90%; /* Hace que sea flexible en todos los dispositivos */
-            max-width: 900px; /* Controla el tamaño en computadoras */
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 900px; /* Controla el tamaño en pantallas grandes */
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #0067d7;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
         }
 
         /* Ajuste para móviles */
         @media (max-width: 768px) {
-            main {
-                width: 95%; /* Se expande más en móviles */
-                padding: 5vw; /* Ajusta el padding en móviles */
+            .container {
+                width: 95%;
+                padding: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <main class="bg-white rounded-lg shadow-lg">
-        <section class="p-6">
-            <h2 class="text-2xl">Misión</h2>
-            <p class="mt-2 text-gray-700">Nuestra misión es ofrecer soluciones tecnológicas innovadoras y de alta calidad que optimicen los procesos empresariales de nuestros clientes, mediante el desarrollo y la implementación de software y sistemas a medida, diseñados para satisfacer sus necesidades específicas y garantizar su éxito a largo plazo.</p>
+    <div class="container">
+        <section>
+            <h2>Misión</h2>
+            <p>Nuestra misión es ofrecer soluciones tecnológicas innovadoras y de alta calidad que optimicen los procesos empresariales de nuestros clientes, mediante el desarrollo y la implementación de software y sistemas a medida, diseñados para satisfacer sus necesidades específicas y garantizar su éxito a largo plazo.</p>
         </section>
 
-        <section class="p-6">
-            <h2 class="text-2xl">Visión</h2>
-            <p class="mt-2 text-gray-700">Ser reconocidos como líderes en la creación de soluciones digitales avanzadas, transformando la manera en que las empresas operan a nivel nacional, a través de la innovación constante, la excelencia en el servicio y el compromiso con la mejora continua.</p>
+        <section>
+            <h2>Visión</h2>
+            <p>Ser reconocidos como líderes en la creación de soluciones digitales avanzadas, transformando la manera en que las empresas operan a nivel nacional, a través de la innovación constante, la excelencia en el servicio y el compromiso con la mejora continua.</p>
         </section>
 
-        <section class="p-6">
-            <h2 class="text-2xl">Valores</h2>
-            <ul class="mt-2 text-gray-700 list-disc pl-5">
-                <li><strong>Innovación:</strong> Fomentamos la creatividad y la innovación para ofrecer soluciones tecnológicas de vanguardia que respondan a las necesidades cambiantes del mercado.</li>
-                <li><strong>Calidad:</strong> Nos comprometemos con la excelencia, garantizando que cada producto y servicio entregado cumpla con los más altos estándares de calidad.</li>
-                <li><strong>Compromiso:</strong> Trabajamos estrechamente con nuestros clientes, asegurando que sus objetivos y expectativas sean alcanzados a través de soluciones efectivas y eficientes.</li>
-                <li><strong>Integridad:</strong> Actuamos con transparencia, honestidad y ética en todas nuestras relaciones comerciales.</li>
-                <li><strong>Trabajo en equipo:</strong> Fomentamos un ambiente colaborativo, donde el talento y las ideas se complementan para alcanzar los mejores resultados.</li>
-                <li><strong>Orientación al cliente:</strong> Colocamos a nuestros clientes en el centro de nuestra estrategia, buscando siempre soluciones que mejoren su competitividad y satisfacción.</li>
+        <section>
+            <h2>Valores</h2>
+            <ul>
+                <li><strong>Innovación:</strong> Fomentamos la creatividad y la innovación para ofrecer soluciones tecnológicas de vanguardia.</li>
+                <li><strong>Calidad:</strong> Nos comprometemos con la excelencia, garantizando los más altos estándares.</li>
+                <li><strong>Compromiso:</strong> Trabajamos estrechamente con nuestros clientes para lograr sus objetivos.</li>
+                <li><strong>Integridad:</strong> Actuamos con transparencia y ética en todas nuestras relaciones.</li>
+                <li><strong>Trabajo en equipo:</strong> Fomentamos un ambiente colaborativo para obtener los mejores resultados.</li>
+                <li><strong>Orientación al cliente:</strong> Priorizamos la satisfacción y competitividad de nuestros clientes.</li>
             </ul>
         </section>
-    </main>
+    </div>
 </body>
 </html>
